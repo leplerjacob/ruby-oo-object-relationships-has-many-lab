@@ -23,7 +23,7 @@ describe 'Song' do
       expect(Song.class_variable_get(:@@all)).to be_a(Array)
     end
   end
-
+  
   describe '.all' do
     it 'is a class method that returns an array of all song instances that have been created' do
       expect(Song.all).to match([song, song2])
